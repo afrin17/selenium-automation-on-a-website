@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name="vowels">
+  <include name="a"></include>
+  <include name="e"></include>
+  <include name="i"></include>
+  <include name="o"></include>
+  <include name="u"></include>
+  </define>
+  <run>
+  <include name="vowels"></include>
+  <include name="a"></include>
+  <include name="b"></include>
+  <exclude name="d"></exclude>
+  <exclude name="i"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.example.automation.testNG.testNg_groups"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
