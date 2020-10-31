@@ -82,9 +82,6 @@ public class signin_testNg {
 		catch (Exception e) {
 			System.out.println("Login failure");
 		}
-		finally {
-			driver.findElement(By.linkText("Sign in")).click();
-		}
 	}
 	
 	@AfterSuite

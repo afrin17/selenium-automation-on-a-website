@@ -1,31 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[entering username]]>
+    </line>
+    <line>
+      <![CDATA[entering password]]>
+    </line>
+    <line>
+      <![CDATA[logging in]]>
+    </line>
   </reporter-output>
-  <suite started-at="2020-10-26T16:21:08 IST" name="Suite" finished-at="2020-10-26T16:21:08 IST" duration-ms="100">
+  <suite started-at="2020-10-31T19:34:57 IST" name="Suite" finished-at="2020-10-31T19:35:05 IST" duration-ms="8169">
     <groups>
-      <group name="a">
-        <method signature="testNg_groups.test1()[pri:0, instance:com.example.automation.testNG.testNg_groups@770d3326]" name="test1" class="com.example.automation.testNG.testNg_groups"/>
-      </group> <!-- a -->
-      <group name="b">
-        <method signature="testNg_groups.test1()[pri:0, instance:com.example.automation.testNG.testNg_groups@770d3326]" name="test1" class="com.example.automation.testNG.testNg_groups"/>
-        <method signature="testNg_groups.test5()[pri:0, instance:com.example.automation.testNG.testNg_groups@770d3326]" name="test5" class="com.example.automation.testNG.testNg_groups"/>
-      </group> <!-- b -->
-      <group name="l">
-        <method signature="testNg_groups.test5()[pri:0, instance:com.example.automation.testNG.testNg_groups@770d3326]" name="test5" class="com.example.automation.testNG.testNg_groups"/>
-      </group> <!-- l -->
     </groups>
-    <test started-at="2020-10-26T16:21:08 IST" name="Test" finished-at="2020-10-26T16:21:08 IST" duration-ms="100">
-      <class name="com.example.automation.testNG.testNg_groups">
-        <test-method signature="test1()[pri:0, instance:com.example.automation.testNG.testNg_groups@770d3326]" started-at="2020-10-26T16:21:08 IST" name="test1" finished-at="2020-10-26T16:21:08 IST" duration-ms="17" status="PASS">
+    <test started-at="2020-10-31T19:34:57 IST" name="Test" finished-at="2020-10-31T19:35:05 IST" duration-ms="8169">
+      <class name="com.example.automation.testNG.signin_testNg_attributes">
+        <test-method is-config="true" signature="setop(java.lang.String, java.lang.String)[pri:0, instance:com.example.automation.testNG.signin_testNg_attributes@1e44b638]" started-at="2020-10-31T19:34:42 IST" name="setop" finished-at="2020-10-31T19:34:57 IST" duration-ms="14560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test5()[pri:0, instance:com.example.automation.testNG.testNg_groups@770d3326]" started-at="2020-10-26T16:21:08 IST" name="test5" finished-at="2020-10-26T16:21:08 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- setop -->
+        <test-method signature="login()[pri:0, instance:com.example.automation.testNG.signin_testNg_attributes@1e44b638]" started-at="2020-10-31T19:34:57 IST" name="login" finished-at="2020-10-31T19:35:05 IST" duration-ms="7620" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[entering username]]>
+            </line>
+            <line>
+              <![CDATA[entering password]]>
+            </line>
+            <line>
+              <![CDATA[logging in]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="dashboard()[pri:0, instance:com.example.automation.testNG.signin_testNg_attributes@1e44b638]" started-at="2020-10-31T19:35:05 IST" name="dashboard" finished-at="2020-10-31T19:35:05 IST" depends-on-methods="com.example.automation.testNG.signin_testNg_attributes.login" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test5 -->
-      </class> <!-- com.example.automation.testNG.testNg_groups -->
+        </test-method> <!-- dashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.automation.testNG.signin_testNg_attributes@1e44b638]" started-at="2020-10-31T19:35:05 IST" name="tearDown" finished-at="2020-10-31T19:35:05 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.automation.testNG.signin_testNg_attributes -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
